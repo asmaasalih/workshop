@@ -21,7 +21,9 @@ def atm(mony,req):
                 req=req-1
     else:
         print "not avalable "
+    if req <0:
+        print "try positive value"
 
-atm(500,88)
+atm(500,-154)
 
 
