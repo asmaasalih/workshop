@@ -1,12 +1,10 @@
-
 def withdraw(balance,req):
     if req>balance:
         print "Can't give you all this money !!"
-    elif req<=0:
-        print("More than zero plz!")
     
+    #print "current balance : "+str(balance)
     if balance >=req:
-        balance =balance - req
+        balance=balance-req
         while req > 0:
             if req >= 100:
                 print "give 100"
@@ -27,16 +25,16 @@ def withdraw(balance,req):
                 print "give 1"
                 req=req-1
     
-    return balance - req
+    return balance
+
     
 balance=500
-print "current balance : "+str(balance)
 balance=withdraw(balance, 277)
 print "current balance: "+str(balance)
-balance=withdraw(balance, 165)
+balance=withdraw(balance, 124)
 print "current balance: "+str(balance)
-balance=withdraw(balance, 30)
+balance=withdraw(balance, 90)
 print "current balance: "+str(balance)
-balance=withdraw(balance, 133)
+balance=withdraw(balance, 50)
 print "current balance: "+str(balance)
 
