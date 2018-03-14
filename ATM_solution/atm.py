@@ -1,10 +1,17 @@
 class ATM:
+    def __init__(self,bank_name,balance):
+        self.bank_name=bank_name
+        self.balance=balance
+
     def withdraw(self,req):
         print "Welcome to "+self.bank_name
         print "current balance : "+str(self.balance)
-        
+
         if req>self.balance:
             print "Can't give you all this money !!"
+
+        if req<=0:
+            print "Inter positive number only please!! "    
         
         if self.balance >=req:
             self.balance=self.balance-req
@@ -29,10 +36,7 @@ class ATM:
                     req=req-1
         
         return self.balance
-    def __init__(self,bank_name,balance):
-        self.bank_name=bank_name
-        self.balance=balance
-
+    
 balance1 = 500
 balance2 = 1000
 
