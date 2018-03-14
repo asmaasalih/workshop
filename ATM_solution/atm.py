@@ -35,7 +35,7 @@ class ATM:
                     print "give 1"
                     req=req-1
         
-        return self.balance
+        
     
 balance1 = 500
 balance2 = 1000
